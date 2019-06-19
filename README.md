@@ -13,15 +13,15 @@ cd Projects
 ```
 
 3. Use the cookiecutter to make your new project:
-```python
+```bash
 cookiecutter gh:katie-simmons/productionizing-ml-models
 ```
 
 NOTE: If you have MFA enabled on your github account, an error in cloning the repo may occur. The workaround is to clone this repo - or `cd` into your local `productionizing-ml-models` do a `git pull origin master` if you have already cloned it (remember to `cd ..` after pulling, as cookiecutter will be outputting to the current directory) - and use the cookiecutter locally:
-```
+```bash
 git clone git@github.com:katie-simmons/productionizing-ml-models.git
 ```
-```
+```bash
 cookiecutter ./productionizing-ml-models
 ```
 

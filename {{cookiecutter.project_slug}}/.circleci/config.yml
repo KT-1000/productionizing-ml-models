@@ -26,7 +26,9 @@ jobs:
     steps:
       - checkout
       - restore_cache:
+          {% raw %}
           key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
+          {% endraw %}
       - run:
           name: Install Python deps in a venv
           command: |
@@ -34,7 +36,9 @@ jobs:
             . venv/bin/activate
             pip install -r requirements.txt
       - save_cache:
+          {% raw %}
           key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
+          {% endraw %}
           paths:
             - "venv"
       - run:
