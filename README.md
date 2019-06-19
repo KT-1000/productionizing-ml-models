@@ -53,8 +53,8 @@ your_project_name/
 ├── README.md
 ├── app
 │   ├── requirements.txt
-│   ├── test_model.py
-│   └── model.py
+│   ├── test_app.py
+│   └── app.py
 └── .gitignore
 ```
 
@@ -76,8 +76,8 @@ test-model/
 ├── README.md
 ├── app
 │   ├── requirements.txt
-│   ├── test_model.py
-└── └── model.py
+│   ├── test_app.py
+└── └── app.py
 
 3 directories, 5 files
 ```
@@ -94,4 +94,4 @@ drwxr-xr-x  18 katiesimmons  staff   576 Jun 19 09:15 ..
 drwxr-xr-x   5 katiesimmons  staff   160 Jun 19 09:15 app
 ```
 
-5. Customize your project before pushing to github as a new repo. For example, `app/model.py`, `app/test_model.py` and `README.md` will require updating, as denoted by the word `CHANGE`. Be sure to replace all occurences of `CHANGE` with more meaningful text.
+5. Customize your project before pushing to github as a new repo. For example, `app/app.py`, `app/test_app.py` and `README.md` will require updating, as denoted by the word `CHANGE`. Be sure to replace all occurences of `CHANGE` with more meaningful text.
