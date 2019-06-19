@@ -65,31 +65,32 @@ github_username [Your github username]: katie-simmons
 project_name [Required unless you want your project to be named this string right here]: Test Model
 repo_name [test_model]: 
 project_slug [test_model]: 
-project_short_description [A short description of the project]: This is a test for this cookiecutter.
+project_short_description [A short description of the project]: This is a test.
 release_date [2019-06-19]: 
 version [1.0.0]: 
 Katies-MacBook-Pro:Projects katiesimmons$ tree test-model/
-test-model/
+test-model
 ├── Dockerfile
 ├── README.md
-├── app
-│   ├── requirements.txt
-│   ├── test_app.py
-└── └── app.py
+└── app
+    ├── app.py
+    ├── requirements.txt
+    └── test_app.py
 
-3 directories, 5 files
+1 directory, 5 files
 ```
 
-While the `.gitignore` is not shown by `tree`, it is also created and can be confirmed using `ls -al`:
+While the `.gitignore` file and `.circleci` dir are not shown by `tree`, they are also created and can be confirmed using `ls -al`:
 ```
-Katies-MBP:Projects katiesimmons$ ls -al test-data-transformation/
+Katies-MBP:Projects katiesimmons$ ls -al test-model
 total 24
-drwxr-xr-x   7 katiesimmons  staff   224 Jun 19 09:15 .
-drwxr-xr-x  18 katiesimmons  staff   576 Jun 19 09:15 ..
--rw-r--r--   1 katiesimmons  staff  1674 Jun 19 09:15 .gitignore
--rw-r--r--   1 katiesimmons  staff   429 Jun 19 09:15 Dockerfile
--rw-r--r--   1 katiesimmons  staff  2995 Jun 19 09:15 README.md
-drwxr-xr-x   5 katiesimmons  staff   160 Jun 19 09:15 app
+drwxr-xr-x   7 katiesimmons  staff  224 Jun 19 08:52 .
+drwxr-xr-x  24 katiesimmons  staff  768 Jun 19 08:52 ..
+drwxr-xr-x   3 katiesimmons  staff   96 Jun 19 08:52 .circleci
+-rw-r--r--   1 katiesimmons  staff  868 Jun 19 08:52 .gitignore
+-rw-r--r--   1 katiesimmons  staff  306 Jun 19 08:52 Dockerfile
+-rw-r--r--   1 katiesimmons  staff  978 Jun 19 08:52 README.md
+drwxr-xr-x   5 katiesimmons  staff  160 Jun 19 08:52 app
 ```
 
 5. Customize your project before pushing to github as a new repo. For example, `app/app.py`, `app/test_app.py` and `README.md` will require updating, as denoted by the word `CHANGE`. Be sure to replace all occurences of `CHANGE` with more meaningful text.
