@@ -1,18 +1,18 @@
 FROM python:3.7-alpine
 
-ENV TRANSFORMATION_NAME {{cookiecutter.project_slug}}
+# Set environment variables
+ENV MODEL_NAME {{cookiecutter.project_slug}}
 
 # Add requirements file
-COPY ./app/requirements.txt /app/app/requirements.txt
+COPY ./app/requirements.txt /app/requirements.txt
 
 # Install Dependencies
-WORKDIR /app/app
+WORKDIR /app
 RUN pip install -r requirements.txt
 
-# Download nltk corpora
-RUN python -m nltk.downloader stopwords
-
-COPY ./app /app
+COPY ./app/app.py /app/app.py
 WORKDIR /app
 
-CMD ["python", "transformation.py"]
+EXPOSE 5000
+
+ENTRYPOINT python ./app/app.py

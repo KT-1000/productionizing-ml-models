@@ -1,7 +1,9 @@
 # Productionizing Machine Learning Models
-This is a cookiecutter for productionizing machine learning models, provided for a ChiPy Data SIG talk given on 06/19/2019.
+This repo is the companion to a ChiPy Data SIG talk given on 06/19/2019, and contains:
+1. A cookiecutter for productionizing machine learning models by creating a simple Flask API
+2. An example model provided by this [excellent tutorial from Susan Li](https://towardsdatascience.com/develop-a-nlp-model-in-python-deploy-it-with-flask-step-by-step-744f3bdd7776)
 
-## Installation and Use
+## Cookiecutter Installation and Use
 1. Install cookiecutter:
 ```python
 pip install cookiecutter
