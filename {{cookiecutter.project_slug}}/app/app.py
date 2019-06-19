@@ -1,7 +1,7 @@
+from flask import Flask, request, Response
 import json
 import pandas as pd 
 import pickle
-from flask import Flask, request, Response
 
 app = Flask(__name__)
 
@@ -12,7 +12,7 @@ def predict():
 
 	message = request.get_json()
     json_input = {}
-    
+    data = [message]
     prediction = CHANGE
     json_input['prediction'] = prediction
 
